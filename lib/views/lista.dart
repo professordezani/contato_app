@@ -9,12 +9,14 @@ class ListaPage extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
+            onTap:() => Navigator.pushNamed(context, '/edita'),
             leading: CircleAvatar(),
             title: Text("Professor Xavier"),
             subtitle: Text("xavier@xmen.com"),
             trailing: Icon(Icons.chevron_right),
           ),
           ListTile(
+            onTap:() => Navigator.pushNamed(context, '/edita'),
             leading: CircleAvatar(),
             title: Text("Professor Xavier"),
             subtitle: Text("xavier@xmen.com"),
@@ -23,7 +25,7 @@ class ListaPage extends StatelessWidget {
         ],
       ),
       floatingActionButton: FloatingActionButton.extended(
-        onPressed: () {},
+        onPressed: () => Navigator.pushNamed(context, '/novo'),
         label: Text("Novo"),
         icon: Icon(Icons.add)
       ),
