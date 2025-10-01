@@ -17,6 +17,11 @@ class NovoPage extends StatelessWidget {
           spacing: 10,
           children: [
             TextField(
+              // minLines: 1,
+              // maxLines: 2,
+              // autocorrect: false,
+              // enabled: false,
+              // maxLength: 20,
               decoration: InputDecoration(
                 filled: false,
                 labelText: "Nome",
