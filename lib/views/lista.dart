@@ -8,19 +8,17 @@ class ListaPage extends StatelessWidget {
       appBar: AppBar(title: Text("Contatos")),
       body: ListView(
         children: [
-          ListTile(
-            onTap:() => Navigator.pushNamed(context, '/edita'),
-            leading: CircleAvatar(),
-            title: Text("Professor Xavier"),
-            subtitle: Text("xavier@xmen.com"),
-            trailing: Icon(Icons.chevron_right),
-          ),
-          ListTile(
-            onTap:() => Navigator.pushNamed(context, '/edita'),
-            leading: CircleAvatar(),
-            title: Text("Professor Xavier"),
-            subtitle: Text("xavier@xmen.com"),
-            trailing: Icon(Icons.chevron_right),
+          Dismissible(
+            key: Key("1"),
+            onDismissed: (_) {},
+            background: Container(color: Colors.red),
+            child: ListTile(
+              onTap:() => Navigator.pushNamed(context, '/edita'),
+              leading: CircleAvatar(),
+              title: Text("Professor Xavier"),
+              subtitle: Text("xavier@xmen.com"),
+              trailing: Icon(Icons.chevron_right),
+            ),
           ),
         ],
       ),

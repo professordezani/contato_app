@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'lista.dart';
 import 'novo.dart';
 import 'edita.dart';
+import 'login.dart';
+import 'registro.dart';
 
 class ContatoApp extends StatelessWidget {
 
@@ -12,8 +14,10 @@ class ContatoApp extends StatelessWidget {
         '/lista': (context) => ListaPage(),
         '/novo': (context) => NovoPage(),
         '/edita': (context) => EditaPage(),
+        '/login': (context) => LoginPage(),
+        '/registro': (context) => RegistroPage(),
       },
-      initialRoute: '/lista',
+      initialRoute: '/login',
     );
   }
 }
